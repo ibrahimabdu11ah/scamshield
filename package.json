@@ -1,0 +1,30 @@
+{
+  "name": "scamshield",
+  "private": true,
+  "version": "1.2.0",
+  "description": "Evidence-first scam triage and awareness prototype: Manipulation X-Ray, Scam Journey Simulator, optional Supabase accounts.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test src/utils/analyzer.test.js src/utils/authValidation.test.js src/utils/historyMapping.test.js src/utils/extra.test.js src/utils/evalset.test.js",
+    "start": "vite preview --host localhost --open",
+    "serve": "npm run build && vite preview --host localhost --open",
+    "audit:prod": "npm audit --omit=dev"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.49.4",
+    "lucide-react": "0.460.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tesseract.js": "5.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.4",
+    "vite": "^6.3.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
